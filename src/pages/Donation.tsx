@@ -4,7 +4,8 @@ type CheckoutResponse = {
 
 const Donation = () => {
   const createSession = async (amount: number) => {
-    const res = await fetch("http://localhost:3000/create-checkout-session", {
+    const SERVER_API_URL = import.meta.env.SERVER_API_URL;
+    const res = await fetch(`${SERVER_API_URL}/create-checkout-session`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount }),
