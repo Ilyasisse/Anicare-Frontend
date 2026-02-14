@@ -1,0 +1,29 @@
+type CheckoutResponse = {
+  url: string;
+};
+
+const Donation = () => {
+  const createSession = async (amount: number) => {
+    const res = await fetch("http://localhost:3000/create-checkout-session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount }),
+    });
+
+    const data: CheckoutResponse = await res.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    }
+  };
+
+  return (
+    <div className="flex gap-4 justify-center mt-20">
+      <button onClick={() => createSession(10)}>Donate $10</button>
+      <button onClick={() => createSession(25)}>Donate $25</button>
+      <button onClick={() => createSession(50)}>Donate $50</button>
+    </div>
+  );
+};
+
+export default Donation;
