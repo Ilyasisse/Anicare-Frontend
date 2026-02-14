@@ -29,6 +29,7 @@ const Donation = () => {
       <button onClick={() => createSession(10)}>Donate $10</button>
       <button onClick={() => createSession(25)}>Donate $25</button>
       <button onClick={() => createSession(50)}>Donate $50</button>
+      
     </div>
   );
 };
