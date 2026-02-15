@@ -11,7 +11,6 @@ import {
   faInstagram,
   faXTwitter,
   faLinkedin,
-  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router";
 export default function Footer() {
