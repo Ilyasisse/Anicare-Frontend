@@ -12,8 +12,8 @@ const ProjectSideBySide = ({ img, title, paragraph }: ProgramSideBySide) => {
       </div>
       <div className="w-1/2">
         <div className="flex justify-between items-center text-sm mb-2">
-          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">
-            Completed
+          <span className="bg-blue-200 text-blue-600 px-3 py-1 rounded-full">
+            Ongoing
           </span>
           <span className="text-gray-500">Bosaso, Somalia</span>
         </div>
@@ -22,9 +22,9 @@ const ProjectSideBySide = ({ img, title, paragraph }: ProgramSideBySide) => {
 
         <p className="text-gray-600 mb-4 lg:text-lg  ">{paragraph}</p>
 
-        <button className="text-[#00aa9e] font-medium hover:underline">
+        {/* <button className="text-[#00aa9e] font-medium hover:underline">
           View Details →
-        </button>
+        </button> */}
       </div>
     </div>
   );

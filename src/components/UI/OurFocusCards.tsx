@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router";
 
 type ProgramSideBySide = {
   icon: IconDefinition;
@@ -24,10 +25,10 @@ const OurFocusCards = ({
       </div>
       <h2 className="text-2xl">{title}</h2>
       <p className="text-gray-600">{paragraph}</p>
-      <a href={href} className="text-[#00aa9e] hover:text-[#007a72] transition">
+      <Link to={href} className="text-[#00aa9e] hover:text-[#007a72] transition">
         <span>{linkText}</span>
         <FontAwesomeIcon icon={faAngleRight} />
-      </a>
+      </Link>
     </div>
   );
 };

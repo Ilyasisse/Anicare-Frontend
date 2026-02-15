@@ -13,6 +13,7 @@ import {
   faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router";
 export default function Footer() {
   return (
     <footer className="bg-[#f8f8f8] border-t border-gray-200 mt-0.5">
@@ -51,29 +52,29 @@ export default function Footer() {
 
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>
-                <a href="/" className="hover:text-[#00aa9e]">
+                <Link to={"/"} className="hover:text-[#00aa9e]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about_us" className="hover:text-[#00aa9e]">
+                <Link to={"/about_us"} className="hover:text-[#00aa9e]">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/projects" className="hover:text-[#00aa9e]">
+                <Link to={"/projects"} className="hover:text-[#00aa9e]">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:text-[#00aa9e]">
+                <Link to={"/blog"} className="hover:text-[#00aa9e] hidden">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/get_involved" className="hover:text-[#00aa9e]">
+                <Link to={"/get_involved"} className="hover:text-[#00aa9e]">
                   Get Involved
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -84,24 +85,24 @@ export default function Footer() {
 
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>
-                <a href="#" className="hover:text-[#00aa9e]">
+                <Link to={"#"} className="hover:text-[#00aa9e]">
                   Volunteer
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#00aa9e]">
+                <Link to={"#"} className="hover:text-[#00aa9e]">
                   Partner With Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#00aa9e]">
+                <Link to={"#"} className="hover:text-[#00aa9e]">
                   Donate
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#00aa9e]">
+                <Link to={"#"} className="hover:text-[#00aa9e]">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -142,7 +143,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center justify-center gap-6 text-xl text-gray-600 w-full">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/anicareorg"
             target="_blank"
             className="hover:text-[#00aa9e] hover:scale-110 transition"
             aria-label="Facebook"
@@ -151,7 +152,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/anicareorg"
             target="_blank"
             className="hover:text-[#00aa9e] hover:scale-110 transition"
             aria-label="Instagram"
@@ -160,7 +161,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://twitter.com"
+            href="https://x.com/anicareorg"
             target="_blank"
             className="hover:text-[#00aa9e] hover:scale-110 transition"
             aria-label="Twitter"
@@ -175,15 +176,6 @@ export default function Footer() {
             aria-label="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            className="hover:text-[#00aa9e] hover:scale-110 transition"
-            aria-label="YouTube"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
 

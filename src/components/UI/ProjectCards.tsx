@@ -23,9 +23,9 @@ const ProjectCards = ({ img, title, paragraph }: ProgramSideBySide) => {
 
       <p className="text-gray-600 mb-4">{paragraph}</p>
 
-      <button className="text-[#00aa9e] font-medium hover:underline">
+      {/* <button className="text-[#00aa9e] font-medium hover:underline">
         View Details →
-      </button>
+      </button> */}
     </div>
   );
 };

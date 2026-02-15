@@ -14,7 +14,7 @@ const ProjectSideBySideRight = ({
       <div className="w-1/2">
         <div className="flex justify-between items-center text-sm mb-2">
           <span className="text-gray-500">Bosaso, Somalia</span>
-          <span className="bg-blue-100 text-green-700 px-3 py-1 rounded-full ">
+          <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full ">
             Completed
           </span>
         </div>
@@ -23,9 +23,9 @@ const ProjectSideBySideRight = ({
 
         <p className="text-gray-600 mb-4 lg:text-lg  ">{paragraph}</p>
 
-        <button className="text-[#00aa9e] font-medium hover:underline">
+        {/* <button className="text-[#00aa9e] font-medium hover:underline">
           View Details →
-        </button>
+        </button> */}
       </div>
       <div className="w-1/2 flex justify-end">
         <img src={img} alt="" className="rounded-2xl " />

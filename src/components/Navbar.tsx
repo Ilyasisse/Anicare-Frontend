@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link to={"/projects"} className="hover:text-[#007a72] transition">
             Projects
           </Link>
-          <Link to={"/blogs"} className="hover:text-[#007a72] transition">
+          <Link to={"/blogs"} className="hover:text-[#007a72] transition hidden">
             Blog
           </Link>
           <Link
@@ -85,10 +85,10 @@ export default function Navbar() {
             <Link to={"/about_us"} onClick={() => setMenuOpen(false)}>
               About Us
             </Link>
-            <Link to={"/projects"} onClick={() => setMenuOpen(false)}>
+            <Link to={"/projects"} onClick={() => setMenuOpen(false)} >
               Projects
             </Link>
-            <Link to={"/blog"} onClick={() => setMenuOpen(false)}>
+            <Link to={"/blog"} onClick={() => setMenuOpen(false)} className="hidden">
               Blog
             </Link>
             <Link to={"/get_involved"} onClick={() => setMenuOpen(false)}>
